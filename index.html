@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="rotten.gif" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .movie-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .movie-tile {
+        width: 200px;
+        margin: 10px;
+        text-align: center;
+      }
+
+      .movie-tile img {
+        width: 100%;
+        max-height: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .header {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+
+      nav li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #ff6600;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="user_auth.html" id="auth">Login</a></li>
+        <li id="reg"><a href="user_auth.html">Sign Up</a></li>
+        <li id="usr"><a href="#" id="username">Username</a></li>
+      </ul>
+    </nav>
+
+    <div id="image-banner">
+      <img src="./assets/banner.png" />
+    </div>
+
+    <div id="content">
+      <h1>List of Movies</h1>
+
+      <div class="movie-container" id="movie_container"></div>
+    </div>
+
+  
+
+  
+  </body>
+</html>
